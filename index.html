@@ -1,17 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Xavier's Page</title>
-  </head>
 
-  <body>
-    <main>
-      Hi there nice to meet you!      
-    </main>
-  </body>
+<head style="text-align: center;">
+  <style>
+    label {
+      display: inline-block;
+      width: auto;
+    }
 
-  <footer>
+    input {
+      display: inline-block;
+      width: auto;
+    }
+    #filling{
+      width: 100px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Xavier's Page</title>
+  <h1>Welcome to my Github Page!</h1>
+</head>
 
-  </footer>
+<hr>
+<header style="text-align: center;">
+  <div>
+    <img style="width: 200px;" src="profile_pic.png" alt="Profile picture here">
+    <br>
+    <a href="https://github.com/Xavierkst">Link to my github Repo</a>
+  </div>
+  <div style="padding: 0 45%; text-align: left">
+    <p>name:<i>Kai Tan</i></p>
+    <p>school: <span><a href="https://www.ucsd.edu">UC San Diego</a></span>
+    </p>
+    <p>Major:<b>Computer Engineering</b></p>
+  </div>
+  <aside>
+    <h4>fun fact:</h4>
+      <p>I scroll thru <strong>memes</strong> in <em> class </em>for fun</p>
+    </aside>
+</header>
+
+<br>
+<hr>
+<br>
+<body style=" text-align: center;">
+          <main>
+            <section>
+              <h2>Sample of my grocery list:</h2>
+              <div>
+                <ol style="list-style-position: inside;">
+                  <li><code>Milk</code></li>
+                  <li><code>Chocolate milk</code></li>
+                  <li><code>Cereal</code></li>
+                  <li><code>Bananas</code></li>
+                  <li><code>Cheetos</code></li>
+                </ol>
+                <h2>Some other things I enjoy doing:</h2>
+                <ul style="list-style-position: inside;">
+                  <li>Video games</li>
+                  <li>Sci-fi movies</li>
+                  <li>drawing</li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <h2>Some of my Hobbies</h2>
+              <div>
+                <h3>Painting / Art</h3>
+                <p style="margin: 0 30%;">
+                  Being an artist who did oil painting and drawing on graphite in
+                  highschool, I gravitate naturally towards pop culture/art,
+                  and have a strong interest in all artistic endeavors. I also used to
+                  think I'd become a concept artist in future, but for the time being,
+                  drawing images with code, and web development are my main focuses!
+                </p>
+                <h3>Sports & Hiking</h3>
+                <pre style="margin: 0 30%">I like to trek, go outdoors and snowboard, so you could say im a
+fairly adventurous person. I will post photos of my hikes here in
+future.
+                  </pre>
+                <figure>
+                  <img src="mountains.png" alt="mammoth picture" style="width:20%">
+                  <figcaption>A photo I took at the top of the Gondola, Mammoth Mountain</figcaption>
+                </figure>
+                <picture>
+                  <figcaption>Some images of yosemite off the internet and Where I go to get art inspiration</figcaption>
+                  <source srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn8.bigcommerce.com%2Fs-b4g395tyji%2Fimages%2Fstencil%2F2000x2000%2Fproducts%2F517%2F772%2F07-5__56757.1486682870.jpg%3Fc%3D2&f=1&nofb=1">
+                  <img style="width: 20%;" src="http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-national-park.jpg" alt="backpack photo">
+                </picture>
+                <iframe src="https://www.artstation.com/" height="250px"></iframe>
+                <br>
+                <p>Luke Skywalker finding out who's his daddy</p>
+                <audio controls>
+                  <source src="https://www.myinstants.com/media/sounds/star-wars-luke-i-am-your-father.mp3" type="audio/mpeg">
+                  Your browser doesn't support the audio element.
+                </audio>
+                <br>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                  Your browser does not support the HTML canvas tag.</canvas>
+
+                <script>
+                  var c = document.getElementById("myCanvas");
+                  var ctx = c.getContext("2d");
+                  ctx.beginPath();
+                  ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                  ctx.stroke();
+                </script>
+
+                <br>
+                <svg width="300" height="200">
+                  <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:orange;stroke:blue;stroke-width:5;
+                  fill-rule:evenodd;" />
+                </svg>
+
+                <form action="/action_page.php">
+                  <label for="colors">choose a color:</label>
+                  <select name="colors" id="colors">
+                    <optgroup label="Earthy Tones">
+                      <option value="grey">grey</option>
+                      <option value="navy blue">navy blue</option>
+                      <option value="pastel green">pastel green</option>
+                    </optgroup>
+                    <optgroup label="Dark Tones">
+                      <option value="black">black</option>
+                      <option value="dark blue">dark blue</option>
+                      <option value="deep purple">deep purple</option>
+                      <option value="red hot chili pepper red">red hot chili pepper red</option>
+                    </optgroup>
+                  </select>
+                  <br><br>
+                  <input type="submit" value="Submit">
+                </form>
+                <form action="/action_page.html" method="get">
+                  <label for="browser">Choose your favorite browser:</label>
+                  <input list="browsers" name="browser" id="browser">
+                  <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Duckduckgo">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="submit">
+                </form>
+                <form style="margin: 0 40%; text-align: left;" action="/action_page.php">
+                  <fieldset>
+                    <legend>Input your information below, for research purposes:</legend>
+                    <label id="filling" for="fname">First name:</label>
+                    <input  type="text" id="fname" name="fname"><br><br>
+                    <label id="filling" for="lname">Last name:</label>
+                    <input  type="text" id="lname" name="lname"><br><br>
+                    <label id="filling" for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label id="filling" for="birthday">Credit card number:</label>
+                    <input type="text" id="creditNumber" name="creditNumber"><br><br>
+                    <input id="filling" id="filling" type="submit" value="Submit">
+                  </fieldset>
+                </form>
+                <form action="/action_page.php">
+                  <label for="website-review">Leave review for my website!</label>
+                  <textarea name="website-review" rows="5" cols="80">Leave your thoughts on my website here :)</textarea>
+                  <br><br>
+                  <input type="submit" value="Submit">
+                </form>
+                <input type="button" value="Click Button">
+                <br>
+                <input type="checkbox">
+                <br>
+                <input type="date">
+                <br>
+                <input type="email">
+                <br>
+                <input type="file">
+                <br>
+                <input type="image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pbs.org%2Fwnet%2Fnature%2Ffiles%2F2016%2F06%2Fharambe-22-1.jpg&f=1&nofb=1" alt="Submit">
+                <br>
+                <input type="password" name="pwd" id="pwd">
+                <br>
+                <input type="radio" name="gender" id="rad" value="rock">
+                <label for="radio">Radio</label><br>
+                <input type="radio" name="gender" id="rad" value="classical">
+                <label for="classical">Classical</label><br>
+                <input type="radio" name="gender" id="rad" value="alternative">
+                <label for="alternative">Alternative</label>
+                <br>
+                <label for="homepage">Add your homepage here!</label>
+                <input type="url" name="homepage">
+                <input type="submit" value="Submit">
+                <br>
+
+
+                <p>Here are some of my favorite websites to visit</p>
+                <nav>
+                  <a href="www.reddit.com">Reddit</a> |
+                  <a href="www.youtube.com">Youtube</a> |
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Roll</a>
+                </nav>
+              </div>
+            </section>
+          </main>
+          </body>
+          <hr>
+          <footer>
+            <p>
+              hope to see you guys soon!
+            </p>
+          </footer>
+
 </html>
