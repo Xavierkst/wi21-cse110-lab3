@@ -188,8 +188,44 @@ future.
                 <input type="url" name="homepage">
                 <input type="submit" value="Submit">
                 <br>
-
-
+                <table style="border: solid; margin: 5px auto;">
+                  <tr>
+                    <colgroup>
+                      <col style="background-color: green;">
+                      <col style="background-color: yellow;">
+                    </colgroup>
+                    <caption>A random table</caption>
+                    <th>item one</th>
+                    <th>Item two</th>
+                  </tr>
+                  <tr>
+                    <th>item three</th>
+                    <th>item four</th>
+                  </tr>
+                  <tr>
+                    <td>item five</td>
+                    <td>item six</td>
+                  </tr>
+                </table>
+                <details>
+                  <summary>Main details</summary>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  </p>
+                </details>
+                <button type="button" style="color:white;background-color: blue;">Submit</button>
+                <br>
+                <button style="margin: 10px;" onclick="showContent()">Show MEMEs</button>
+                <template>
+                  <h2>Memes</h2>
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pbs.org%2Fwnet%2Fnature%2Ffiles%2F2016%2F06%2Fharambe-22-1.jpg&f=1&nofb=1" width="200" height="200">
+                </template>
+                <script>
+                function showContent() {
+                  var temp = document.getElementsByTagName("template")[0];
+                  var clon = temp.content.cloneNode(true);
+                  document.body.appendChild(clon);
+                }
+                </script>
                 <p>Here are some of my favorite websites to visit</p>
                 <nav>
                   <a href="www.reddit.com">Reddit</a> |
@@ -202,7 +238,7 @@ future.
           </body>
           <hr>
           <footer>
-            <p>
+            <p style="font-size: 2rem;">
               hope to see you guys soon!
             </p>
           </footer>
