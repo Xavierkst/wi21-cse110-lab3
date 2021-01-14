@@ -13,7 +13,7 @@
       width: auto;
     }
 
-    #filling {
+    .filling {
       width: 100px;
     }
   </style>
@@ -82,11 +82,11 @@ future.
           <figcaption>A photo I took at the top of the Gondola, Mammoth Mountain</figcaption>
         </figure>
         <picture>
-          <figcaption>Some images of yosemite off the internet and Where I go to get art inspiration</figcaption>
           <source srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn8.bigcommerce.com%2Fs-b4g395tyji%2Fimages%2Fstencil%2F2000x2000%2Fproducts%2F517%2F772%2F07-5__56757.1486682870.jpg%3Fc%3D2&f=1&nofb=1">
           <img style="width: 20%;" src="http://www.backpaco.com/wp-content/uploads/2015/04/yosemite-national-park.jpg" alt="backpack photo">
         </picture>
-        <iframe src="https://www.artstation.com/" height="250px"></iframe>
+        <figcaption>Some images of yosemite off the internet and Where I go to get art inspiration</figcaption>
+        <iframe src="https://www.artstation.com/" height="250"></iframe>
         <br>
         <p>Luke Skywalker finding out who's his daddy</p>
         <audio controls>
@@ -144,15 +144,15 @@ future.
         <form style="margin: 0 40%; text-align: left;" action="/action_page.php">
           <fieldset>
             <legend>Input your information below, for research purposes:</legend>
-            <label id="filling" for="fname">First name:</label>
+            <label class="filling" for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
-            <label id="filling" for="lname">Last name:</label>
+            <label class="filling" for="lname">Last name:</label>
             <input type="text" id="lname" name="lname"><br><br>
-            <label id="filling" for="email">Email:</label>
+            <label class="filling" for="email">Email:</label>
             <input type="email" id="email" name="email"><br><br>
-            <label id="filling" for="birthday">Credit card number:</label>
+            <label class="filling" for="birthday">Credit card number:</label>
             <input type="text" id="creditNumber" name="creditNumber"><br><br>
-            <input id="filling" id="filling" type="submit" value="Submit">
+            <input class="filling" type="submit" value="Submit">
           </fieldset>
         </form>
         <form action="/action_page.php">
@@ -175,11 +175,11 @@ future.
         <br>
         <input type="password" name="pwd" id="pwd">
         <br>
-        <input type="radio" name="gender" id="rad" value="rock">
+        <input type="radio" name="gender" class="rad" value="rock">
         <label for="radio">Radio</label><br>
-        <input type="radio" name="gender" id="rad" value="classical">
+        <input type="radio" name="gender" class="rad" value="classical">
         <label for="classical">Classical</label><br>
-        <input type="radio" name="gender" id="rad" value="alternative">
+        <input type="radio" name="gender" class="rad" value="alternative">
         <label for="alternative">Alternative</label>
         <br>
         <label for="homepage">Add your homepage here!</label>
@@ -187,18 +187,18 @@ future.
         <input type="submit" value="Submit">
         <br>
         <table style="border: solid; margin: 5px auto;">
-          <tr>
             <colgroup>
               <col style="background-color: green;">
               <col style="background-color: yellow;">
             </colgroup>
             <caption>A random table</caption>
-            <th>item one</th>
-            <th>Item two</th>
+          <tr>
+            <th>first item</th>
+            <th>second item</th>
           </tr>
           <tr>
-            <th>item three</th>
-            <th>item four</th>
+            <td>item three</td>
+            <td>item four</td>
           </tr>
           <tr>
             <td>item five</td>
