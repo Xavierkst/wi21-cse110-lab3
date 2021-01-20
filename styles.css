@@ -29,16 +29,29 @@ body #major {
 }
 
 footer + p {
-  background-color: yellow;
+  background-color: hsl(44, 89%, 69%);
+  margin: 0 50% 0 50%;
+  display: inline-block;
 }
 footer > p {
+
+  position: absolute;
   background-color: red;
+  margin-top: 10%;
+  margin-bottom: 0;
+  margin-right: 50%;
+  margin-left: 50%;
+  display: block;
 }
 
 a ~ p {
-  background: blue;
+  position: absolute;
+  background: hsl(213, 86%, 49%);
 }
 
+iframe {
+  position: relative;
+}
 /* Class Selectors */
 .hobbies {
   width: 15%;
@@ -48,22 +61,54 @@ a ~ p {
   color: #ffe227;
 }
 .hobbies:active {
-  color: green;
+  color: rgb(0,255,0);
 }
 .hobbies:visited {
-  color: blue;
+  color: rgba(0,0,255, 0.8);
 }
 /* Attribute Selectors  */
 img[alt="mammoth picture"] {
   width: 20%;
+  border-style: dashed;
+  border-color: yellow;
+  border-width: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.container-1 {
+  display: flex;
+}
+
+.container-1-box {
+  /* flex-wrap:wrap; */
+  flex: 1;
+  flex-basis: 22%;
+}
+.harambe-pic {
+  width: 70%;
 }
 /* ID Selectors */
 #welcome-msg {
   font-family: 'Montserrat';
   color: #0d335d;
   text-decoration: underline;
+  padding: 10px 20px 10px 20px;
 }
 
 #profile-pic {
   width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#yose-pic {
+  position: relative;
+}
+
+#painting-art {
+  margin: 0 30%;
+  min-width: 30%;
+  max-width: 60%;
 }
